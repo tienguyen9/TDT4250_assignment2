@@ -1,0 +1,13 @@
+-buildpath: \
+	osgi.annotation;version=7.0.0,\
+	osgi.core;version=7.0.0,\
+	osgi.cmpn;version=7.0.0,\
+	tdt4250.conversion.api,\
+	tdt4250.conversion.util
+
+-testpath: \
+	${junit},\
+	${mockito},\
+	${mockito-deps}
+
+Bundle-Version: 0.0.0.${tstamp}

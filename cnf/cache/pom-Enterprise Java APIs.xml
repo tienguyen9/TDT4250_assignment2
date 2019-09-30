@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Enterprise Java APIs" increment="1569798181956">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="org.apache.aries.jpa.javax.persistence_2.1"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.7.0" type="Version"/>
+      <attribute name="documentation" value="http://www.apache.org/"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.7.0" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.aries.jpa.javax.persistence_2.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.7.0" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.aries.jpa.javax.persistence_2.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.persistence.criteria,javax.persistence.metamodel,javax.persistence.spi"/>
+      <attribute name="jpa" value="2.1"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.persistence,javax.persistence.metamodel"/>
+      <attribute name="jpa" value="2.1"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.criteria"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="jpa" value="2.1"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.metamodel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.persistence,javax.sql"/>
+      <attribute name="jpa" value="2.1"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="jpa" value="2.1"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="jpa" value="2.1"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.criteria"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="jpa" value="2.1"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.metamodel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="jpa" value="2.1"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.spi"/>
+    </capability>
+    <capability namespace="osgi.contract">
+      <directive name="uses" value="javax.persistence,javax.persistence.criteria,javax.persistence.metamodel,javax.persistence.spi"/>
+      <attribute name="version" value="2.1.0,2.0.0,1.0.0" type="List&lt;Version&gt;"/>
+      <attribute name="osgi.contract" value="JavaJPA"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="136158" type="Long"/>
+      <attribute name="url" value="file:/C:/Users/Tien/.m2/repository/org/apache/aries/jpa/javax/persistence/javax.persistence_2.1/2.7.0/javax.persistence_2.1-2.7.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="AC1B1685FA80B8BBB46F61713887B9C50B85206F1CD60FE2C0DD078617C00FFC"/>
+    </capability>
+    <capability namespace="bnd.info">
+      <attribute name="name" value="org.apache.aries.jpa.javax.persistence:javax.persistence_2.1:2.7.0"/>
+      <attribute name="from" value="org.apache.aries.jpa.javax.persistence:javax.persistence_2.1:2.7.0"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.persistence.criteria)(version&gt;=0.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.persistence.metamodel)(version&gt;=0.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.sql))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(&amp;(version&gt;=1.6.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.persistence)(version&gt;=0.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.persistence.spi)(version&gt;=0.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.contract">
+      <directive name="filter" value="(&amp;(osgi.contract=JavaJPA)(version=2.1)(!(version&gt;=2.2)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="org.apache.geronimo.specs.geronimo-osgi-locator"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="documentation" value="http://geronimo.apache.org/maven/specs/geronimo-osgi-locator/1.0/geronimo-osgi-locator"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="singleton" value="true"/>
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.geronimo.specs.geronimo-osgi-locator"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.geronimo.specs.geronimo-osgi-locator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework,org.apache.geronimo.osgi.registry.api,org.osgi.util.tracker"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.geronimo.osgi.locator"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="13494" type="Long"/>
+      <attribute name="url" value="file:/C:/Users/Tien/.m2/repository/org/apache/geronimo/specs/geronimo-osgi-locator/1.0/geronimo-osgi-locator-1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="098076E364D452C8B47BFD214AB1834F90D09DA8623F717C4AA5C55E44B38CED"/>
+    </capability>
+    <capability namespace="bnd.info">
+      <attribute name="name" value="org.apache.geronimo.specs:geronimo-osgi-locator:1.0"/>
+      <attribute name="from" value="org.apache.geronimo.specs:geronimo-osgi-locator:1.0"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.geronimo.osgi.locator))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.geronimo.osgi.registry.api)(version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.4.0))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="org.apache.felix.http.servlet-api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.1.2" type="Version"/>
+      <attribute name="documentation" value="http://www.apache.org/"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.1.2" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.felix.http.servlet-api"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.1.2" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.felix.http.servlet-api"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.servlet.annotation,javax.servlet.descriptor"/>
+      <attribute name="version" value="2.6.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.servlet"/>
+      <attribute name="version" value="2.6.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="2.6.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.descriptor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.servlet"/>
+      <attribute name="version" value="2.6.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.descriptor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.descriptor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet"/>
+    </capability>
+    <capability namespace="osgi.contract">
+      <directive name="uses" value="javax.servlet,javax.servlet.http,javax.servlet.descriptor,javax.servlet.annotation"/>
+      <attribute name="version" value="3.1.0" type="Version"/>
+      <attribute name="osgi.contract" value="JavaServlet"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="243480" type="Long"/>
+      <attribute name="url" value="file:/C:/Users/Tien/.m2/repository/org/apache/felix/org.apache.felix.http.servlet-api/1.1.2/org.apache.felix.http.servlet-api-1.1.2.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="CD25C2ADE8EE2EF32E9EA53FE523BB0D65523B5ED9E4377A6129F180CE4FC615"/>
+    </capability>
+    <capability namespace="bnd.info">
+      <attribute name="name" value="org.apache.felix:org.apache.felix.http.servlet-api:1.1.2"/>
+      <attribute name="from" value="org.apache.felix:org.apache.felix.http.servlet-api:1.1.2"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.aries.javax.jax.rs-api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.aries.javax.jax.rs-api"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.aries.javax.jax.rs-api"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.ws.rs.core"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.net.ssl,javax.ws.rs,javax.ws.rs.core"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.client"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.ws.rs.core"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.container"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.ws.rs,javax.xml.bind.annotation,javax.xml.bind.annotation.adapters,javax.xml.namespace"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.ws.rs,javax.ws.rs.core"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.ws.rs.client,javax.ws.rs.core"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.sse"/>
+    </capability>
+    <capability namespace="osgi.contract">
+      <directive name="uses" value="javax.ws.rs,javax.ws.rs.client,javax.ws.rs.container,javax.ws.rs.core,javax.ws.rs.ext,javax.ws.rs.sse"/>
+      <attribute name="version" value="2.1.0,2.0.0,1.1.0" type="List&lt;Version&gt;"/>
+      <attribute name="osgi.contract" value="JavaJAXRS"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="131415" type="Long"/>
+      <attribute name="url" value="file:/C:/Users/Tien/.m2/repository/org/apache/aries/spec/org.apache.aries.javax.jax.rs-api/1.0.0/org.apache.aries.javax.jax.rs-api-1.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="ADC3C28F5C5B683F1EFBAA27C5400C0FD87E49E9149A9C3517085F2CAAAEB1F7"/>
+    </capability>
+    <capability namespace="bnd.info">
+      <attribute name="name" value="org.apache.aries.spec:org.apache.aries.javax.jax.rs-api:1.0.0"/>
+      <attribute name="from" value="org.apache.aries.spec:org.apache.aries.javax.jax.rs-api:1.0.0"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.geronimo.osgi.registry.api))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.net.ssl))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.xml.bind.annotation))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.xml.bind.annotation.adapters))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.xml.namespace))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="slf4j.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.7.10" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.7.10" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="slf4j.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.7.10" type="Version"/>
+      <attribute name="osgi.wiring.host" value="slf4j.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="1.7.10" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="1.7.10" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="1.7.10" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.helpers"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="32119" type="Long"/>
+      <attribute name="url" value="file:/C:/Users/Tien/.m2/repository/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="3863E27005740D4D1289BF87B113EFEA115E9A22408A7D623BE8004991232BFE"/>
+    </capability>
+    <capability namespace="bnd.info">
+      <attribute name="name" value="org.slf4j:slf4j-api:1.7.10"/>
+      <attribute name="from" value="org.slf4j:slf4j-api:1.7.10"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.impl)(version&gt;=1.6.0))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="244106" type="Long"/>
+      <attribute name="url" value="file:/C:/Users/Tien/.m2/repository/org/apache/tomcat/tomcat-servlet-api/8.0.9/tomcat-servlet-api-8.0.9.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="BC69D8A091E731741D213E37238968F0437C921DA7174429A6B0B0993ECD8A78"/>
+    </capability>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.tomcat:tomcat-servlet-api"/>
+      <attribute name="type" value="application/java-archive"/>
+      <attribute name="version" value="8.0.9" type="Version"/>
+    </capability>
+    <capability namespace="bnd.info">
+      <attribute name="name" value="org.apache.tomcat:tomcat-servlet-api:8.0.9"/>
+      <attribute name="from" value="org.apache.tomcat:tomcat-servlet-api:8.0.9"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://opensource.org/licenses/apache2.0.php; link=&quot;http://www.apache.org/licenses/LICENSE-2.0&quot;; description=&quot;Apache License, Version 2.0&quot;"/>
+      <attribute name="osgi.identity" value="osgi.annotation"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="6.0.1.201503162037" type="Version"/>
+      <attribute name="documentation" value="http://www.osgi.org/"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="6.0.1.201503162037" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="osgi.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="6.0.1.201503162037" type="Version"/>
+      <attribute name="osgi.wiring.host" value="osgi.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.annotation.versioning"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="14744" type="Long"/>
+      <attribute name="url" value="file:/C:/Users/Tien/.m2/repository/org/osgi/osgi.annotation/6.0.1/osgi.annotation-6.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="21F9C340932AF9EC03D4CC8B0E77054CE25888D39C32C85F9E86BDB7AD8070E1"/>
+    </capability>
+    <capability namespace="bnd.info">
+      <attribute name="name" value="org.osgi:osgi.annotation:6.0.1"/>
+      <attribute name="from" value="org.osgi:osgi.annotation:6.0.1"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.compile.time.only">
+      <directive name="filter" value="(&amp;(must.not.resolve=*)(!(must.not.resolve=*)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+</repository>

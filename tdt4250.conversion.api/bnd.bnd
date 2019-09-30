@@ -1,0 +1,2 @@
+-buildpath: osgi.annotation
+Export-Package: tdt4250.conversion.api
